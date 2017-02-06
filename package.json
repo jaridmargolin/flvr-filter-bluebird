@@ -1,0 +1,31 @@
+{
+  "name": "flvr-filter-bluebird",
+  "description": "Remove bluebird noise from flvr stack traces.",
+  "author": "Jarid Margolin <jaridmargolin@gmail.com>",
+  "version": "0.0.1",
+  "homepage": "https://github.com/jaridmargolin/flvr-filter-bluebird",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jaridmargolin/flvr-filter-bluebird"
+  },
+  "bugs": {
+    "url": "https://github.com/jaridmargolin/flvr-filter-bluebird/issues"
+  },
+  "scripts": {
+    "test": "standard && mocha",
+    "inspect-test": "inspect _mocha --no-timeouts",
+    "coverage": "nyc --reporter=lcov --reporter=text npm test",
+    "coveralls": "cat ./coverage/lcov.info | coveralls"
+  },
+  "main": "lib/index.js",
+  "devDependencies": {
+    "bluebird": "^3.4.7",
+    "chai": "^3.5.0",
+    "coveralls": "^2.11.15",
+    "inspect-process": "^0.3.0",
+    "mocha": "^3.1.2",
+    "nyc": "^10.0.0",
+    "standard": "^8.6.0"
+  }
+}
